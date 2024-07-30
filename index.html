@@ -6,14 +6,15 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="form-box">
-            <h1>Sign Up</h1>
+            <h1 id="title">Sign Up</h1>
             <form>
                 <div class="input-group">
-                    <div class="input-field">
+                    <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Name">
                     </div>
@@ -25,6 +26,11 @@
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Password">
                     </div>
+                    <p>Forgot password? <a href="#">Click here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="loginBtn" class="disable">Log in</button>
                 </div>
             </form>
         </div>
